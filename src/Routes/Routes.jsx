@@ -50,7 +50,7 @@ export const router = createBrowserRouter([
         {
           path: 'updateItem/:id',
           element: <UpdateItem></UpdateItem>,
-          loader: ({params}) => fetch(`http://localhost:5000/task/${params.id}`)
+          loader: ({params}) => fetch(`https://task-manager-server-neon.vercel.app/task/${params.id}`)
         }
       ]
     },
